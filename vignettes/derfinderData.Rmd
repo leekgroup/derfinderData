@@ -55,14 +55,18 @@ While you could download the data from _BrainSpan_ `r citep(bib[['brainspan']])`
 
 # Data
 
-The following code builds the phenotype table included in `derfinderData`. For two randomly selected structures, 12 samples were chosen with 6 of them being fetal samples and the other 6 coming from adult individuals.
+The following code builds the phenotype table included in `derfinderData`. For two randomly selected structures, 12 samples were chosen with 6 of them being fetal samples and the other 6 coming from adult individuals. For the fetal samples, the age in PCW is transformed into age in years by
+
+    age_in_years = (age_in_PCW - 40) / 52
+
+In other data sets you might want to subtract 42 instead of 40 if some observations have PCW up to 42.
 
 ```{r 'pheno'}
 ## Construct brainspanPheno table
 brainspanPheno <- data.frame(
     gender = c('F', 'M', 'M', 'M', 'F', 'F', 'F', 'M', 'F', 'M', 'M', 'F', 'M', 'M', 'M', 'M', 'F', 'F', 'F', 'M', 'F', 'M', 'M', 'F'),
     lab = c('HSB97.AMY', 'HSB92.AMY', 'HSB178.AMY', 'HSB159.AMY', 'HSB153.AMY', 'HSB113.AMY', 'HSB130.AMY', 'HSB136.AMY', 'HSB126.AMY', 'HSB145.AMY', 'HSB123.AMY', 'HSB135.AMY', 'HSB114.A1C', 'HSB103.A1C', 'HSB178.A1C', 'HSB154.A1C', 'HSB150.A1C', 'HSB149.A1C', 'HSB130.A1C', 'HSB136.A1C', 'HSB126.A1C', 'HSB145.A1C', 'HSB123.A1C', 'HSB135.A1C'),
-    Age = c(-0.547619047619048, -0.452380952380952, -0.571428571428571, -0.380952380952381, -0.666666666666667, -0.666666666666667, 21, 23, 30, 36, 37, 40, -0.642857142857143, -0.642857142857143, -0.571428571428571, -0.571428571428571, -0.666666666666667, -0.642857142857143, 21, 23, 30, 36, 37, 40)
+    Age = c(-0.442307692307693, -0.365384615384615, -0.461538461538461, -0.307692307692308, -0.538461538461539, -0.538461538461539, 21, 23, 30, 36, 37, 40, -0.519230769230769, -0.519230769230769, -0.461538461538461, -0.461538461538461, -0.538461538461539, -0.519230769230769, 21, 23, 30, 36, 37, 40)
 )
 brainspanPheno$structure_acronym <- rep(c('AMY', 'A1C'), each = 12)
 brainspanPheno$structure_name <- rep(c('amygdaloid complex', 'primary auditory cortex (core)'), each = 12)
