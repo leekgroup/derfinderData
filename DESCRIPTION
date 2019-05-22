@@ -1,10 +1,10 @@
 Package: derfinderData
 Type: Package
 Title: Processed BigWigs from BrainSpan for examples
-Version: 2.2.0
-Date: 2018-09-26
+Version: 2.2.1
+Date: 2019-05-22
 Authors@R: c(person("Leonardo", "Collado-Torres", role = c("aut",
-        "cre"), email = "lcollado@jhu.edu"), person("Andrew", "Jaffe",
+        "cre"), email = "lcolladotor@gmail.com"), person("Andrew", "Jaffe",
         role = "aut", email = "andrew.jaffe@libd.org"),
         person("Jeffrey", "Leek", role = c("aut", "ths"), email =
         "jtleek@gmail.com"))
@@ -22,4 +22,4 @@ BugReports: https://github.com/leekgroup/derfinderData/issues
 biocViews: ExperimentData, Homo_sapiens_Data, RNASeqData
 Author: Leonardo Collado-Torres [aut, cre], Andrew Jaffe [aut], Jeffrey
         Leek [aut, ths]
-Maintainer: Leonardo Collado-Torres <lcollado@jhu.edu>
+Maintainer: Leonardo Collado-Torres <lcolladotor@gmail.com>

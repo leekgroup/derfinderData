@@ -8,7 +8,7 @@ Processed 22 samples from BrainSpan keeping only the information for
 chromosome 21. Data is stored in the BigWig format and is used for examples #' in other packages.
 }
 \author{
-Leonardo Collado-Torres <lcollado@jhu.edu>
+Leonardo Collado-Torres <lcolladotor@gmail.com>
 }
 \keyword{package}
 
