@@ -1,13 +1,15 @@
 Package: derfinderData
 Type: Package
 Title: Processed BigWigs from BrainSpan for examples
-Version: 2.3.2
+Version: 2.3.3
 Date: 2019-08-27
 Authors@R: c(person("Leonardo", "Collado-Torres", role = c("aut",
-        "cre"), email = "lcolladotor@gmail.com"), person("Andrew", "Jaffe",
-        role = "aut", email = "andrew.jaffe@libd.org"),
+        "cre"), email = "lcolladotor@gmail.com",
+        comment = c(ORCID = "0000-0003-2140-308X")), person("Andrew", "Jaffe",
+        role = "aut", email = "andrew.jaffe@libd.org",
+        comment = c(ORCID = "0000-0001-6886-1454")),
         person("Jeffrey", "Leek", role = c("aut", "ths"), email =
-        "jtleek@gmail.com"))
+        "jtleek@gmail.com", comment = c(ORCID = "0000-0002-2873-2671")))
 Depends: R(>= 3.1.1)
 Suggests: sessioninfo, knitcitations (>= 1.0.1), knitr (>= 1.6),
         knitrBootstrap (>= 0.9.0), RefManageR, rmarkdown (>= 0.3.3),
