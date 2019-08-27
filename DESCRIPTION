@@ -1,8 +1,8 @@
 Package: derfinderData
 Type: Package
 Title: Processed BigWigs from BrainSpan for examples
-Version: 2.3.1
-Date: 2019-05-22
+Version: 2.3.2
+Date: 2019-08-27
 Authors@R: c(person("Leonardo", "Collado-Torres", role = c("aut",
         "cre"), email = "lcolladotor@gmail.com"), person("Andrew", "Jaffe",
         role = "aut", email = "andrew.jaffe@libd.org"),
@@ -23,3 +23,6 @@ biocViews: ExperimentData, Homo_sapiens_Data, RNASeqData
 Author: Leonardo Collado-Torres [aut, cre], Andrew Jaffe [aut], Jeffrey
         Leek [aut, ths]
 Maintainer: Leonardo Collado-Torres <lcolladotor@gmail.com>
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
