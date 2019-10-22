@@ -14,9 +14,10 @@ Data package for [derfinder](http://bioconductor.org/packages/derfinder) and [de
 Get R 3.5.x or newer from [CRAN](http://cran.r-project.org/).
 
 ```R
-## If needed
-install.packages('BiocManager')
-BiocManager::install('derfinderData')
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("derfinderData")
 ```
 
 # Citation
