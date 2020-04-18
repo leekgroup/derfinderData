@@ -195,7 +195,9 @@ if (knitrBootstrapFlag) {
 ## Extract the R code
 library("knitr")
 knit("derfinderData.Rmd", tangle = TRUE)
+```
 
+```{r createVignette2}
 ## Clean up
 file.remove("derfinderDataRef.bib")
 ```

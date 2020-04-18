@@ -24,7 +24,7 @@ types with 6 fetal and 6 adult samples per structure type.
 }
 \references{
 \enumerate{
-\item BrainSpan: Atlas of the Developing Human Brain \link{Internet}. Funded by ARRA
+\item BrainSpan: Atlas of the Developing Human Brain. Funded by ARRA
 Awards 1RC2MH089921-01, 1RC2MH090047-01, and 1RC2MH089929-01. 2011.
 Available from: http://developinghumanbrain.org.
 \item See http://brainspan.org/policies.html#terms_of_use
