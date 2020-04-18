@@ -4,7 +4,8 @@
 \name{brainspanPheno}
 \alias{brainspanPheno}
 \title{BrainSpan phenotype information}
-\format{A data.frame with 7 columns:
+\format{
+A data.frame with 7 columns:
 \describe{
 \item{gender }{ The gender of the individual sequenced.}
 \item{lab }{ The label for the sample.}
@@ -15,7 +16,8 @@
 chromosomes.}
 \item{ groupe}{ Whether the individual is considered a fetal or adult
 sample.}
-}}
+}
+}
 \description{
 Information for 24 samples from the BrainSpan project covering two structure
 types with 6 fetal and 6 adult samples per structure type.

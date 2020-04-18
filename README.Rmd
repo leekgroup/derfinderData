@@ -1,0 +1,64 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# derfinderData
+
+<!-- badges: start -->
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![BioC status](http://www.bioconductor.org/shields/build/release/bioc/derfinderData.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/derfinderData)
+[![R build status](https://github.com/leekgroup/derfinderData/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/leekgroup/derfinderData/actions)
+<!-- badges: end -->
+
+Data package for [derfinder](http://bioconductor.org/packages/derfinder) and [derfinderPlot](http://bioconductor.org/packages/derfinderPlot) examples.
+
+## Documentation
+
+For more information about `derfinderData` check the vignettes [through Bioconductor](http://bioconductor.org/packages/derfinderData) or at the [documentation website](http://leekgroup.github.io/derfinderData).
+
+## Installation instructions
+
+Get the latest stable `R` release from [CRAN](http://cran.r-project.org/). Then install `derfinderData` using from [Bioconductor](http://bioconductor.org/) the following code:
+
+```{r 'install', eval = FALSE}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("derfinderData")
+```
+
+## Citation
+
+Below is the citation output from using `citation('derfinderData')` in R. Please 
+run this yourself to check for any updates on how to cite __derfinderData__.
+
+```{r 'citation', eval = requireNamespace('derfinderData')}
+print(citation('derfinderData'), bibtex = TRUE)
+```
+
+Please note that the `derfinderData` was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.
+
+## Code of Conduct
+  
+Please note that the derfinderData project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+
+## Development tools
+
+* Continuous code testing is possible thanks to [GitHub actions](https://www.tidyverse.org/blog/2020/04/usethis-1-6-0/)  through `r BiocStyle::CRANpkg('usethis')`, `r BiocStyle::CRANpkg('remotes')`, `r BiocStyle::Githubpkg('r-hub/sysreqs')` and `r BiocStyle::CRANpkg('rcmdcheck')` customized to use [Bioconductor's docker containers](https://www.bioconductor.org/help/docker/) and `r BiocStyle::Biocpkg('BiocCheck')`.
+* Code coverage assessment is possible thanks to [codecov](https://codecov.io/gh) and `r BiocStyle::CRANpkg('covr')`.
+* The [documentation website](http://leekgroup.github.io/derfinderData) is automatically updated thanks to `r BiocStyle::CRANpkg('pkgdown')`.
+* The code is styled automatically thanks to `r BiocStyle::CRANpkg('styler')`.
+* The documentation is formatted thanks to `r BiocStyle::CRANpkg('devtools')` and `r BiocStyle::CRANpkg('roxygen2')`.
+
+For more details, check the `dev` directory.
