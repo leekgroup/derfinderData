@@ -128,8 +128,9 @@ jobs:
           )
         shell: Rscript {0}
 
-      - name: Reveal testthat details
-        run: find . -name testthat.Rout -exec cat '{}' ';'
+      ## This package has no tests
+      # - name: Reveal testthat details
+      #   run: find . -name testthat.Rout -exec cat '{}' ';'
 
       - name: BiocCheck
         run: |
@@ -161,11 +162,12 @@ jobs:
         ## branch (erasing anything you haven't version controlled!) and
         ## makes the git history recognizable by pkgdown.
 
-      - name: Test coverage
-        if: github.ref == 'refs/heads/master'
-        run: |
-          covr::codecov()
-        shell: Rscript {0}
+      ## This package has no tests
+      # - name: Test coverage
+      #   if: github.ref == 'refs/heads/master'
+      #   run: |
+      #     covr::codecov()
+      #   shell: Rscript {0}
 
       - id: findrversion
         run: |
@@ -301,8 +303,9 @@ jobs:
           )
         shell: Rscript {0}
 
-      - name: Reveal testthat details
-        run: find . -name testthat.Rout -exec cat '{}' ';'
+      ## This package has no tests
+      # - name: Reveal testthat details
+      #   run: find . -name testthat.Rout -exec cat '{}' ';'
 
       - name: BiocCheck
         run: |
