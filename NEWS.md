@@ -1,3 +1,9 @@
+# derfinderPlot 2.5.3
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+* Now using BiocStyle for the vignette.
+
 # derfinderPlot 2.5.1
 
 SIGNIFICANT USER-VISIBLE CHANGES

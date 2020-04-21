@@ -1,8 +1,8 @@
 Package: derfinderData
 Type: Package
 Title: Processed BigWigs from BrainSpan for examples
-Version: 2.5.2
-Date: 2020-04-17
+Version: 2.5.3
+Date: 2020-04-20
 Authors@R: c(person("Leonardo", "Collado-Torres", role = c("aut",
         "cre"), email = "lcolladotor@gmail.com",
         comment = c(ORCID = "0000-0003-2140-308X")), person("Andrew", "Jaffe",
@@ -15,9 +15,9 @@ Suggests:
     sessioninfo,
     knitcitations (>= 1.0.1),
     knitr (>= 1.6),
-    knitrBootstrap (>= 0.9.0),
     RefManageR,
-    rmarkdown (>= 0.3.3)
+    rmarkdown (>= 0.3.3),
+    BiocStyle
 VignetteBuilder: knitr
 Description: Processed 22 samples from BrainSpan keeping only the
         information for chromosome 21. Data is stored in the BigWig
@@ -27,9 +27,6 @@ LazyData: true
 URL: https://github.com/leekgroup/derfinderData
 BugReports: https://github.com/leekgroup/derfinderData/issues
 biocViews: ExperimentData, Homo_sapiens_Data, RNASeqData
-Author: Leonardo Collado-Torres [aut, cre], Andrew Jaffe [aut], Jeffrey
-        Leek [aut, ths]
-Maintainer: Leonardo Collado-Torres <lcolladotor@gmail.com>
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
-[![BioC status](http://www.bioconductor.org/shields/build/release/bioc/derfinderData.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/derfinderData)
+[![BioC status](http://bioconductor.org/shields/build/release/data-experiment/derfinderData.svg)](http://bioconductor.org/checkResults/release/data-experiment-LATEST/derfinderData/)
 [![R build status](https://github.com/leekgroup/derfinderData/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/leekgroup/derfinderData/actions)
 <!-- badges: end -->
 

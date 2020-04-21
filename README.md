@@ -8,7 +8,7 @@
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![BioC
-status](http://www.bioconductor.org/shields/build/release/bioc/derfinderData.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/derfinderData)
+status](http://bioconductor.org/shields/build/release/data-experiment/derfinderData.svg)](http://bioconductor.org/checkResults/release/data-experiment-LATEST/derfinderData/)
 [![R build
 status](https://github.com/leekgroup/derfinderData/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/leekgroup/derfinderData/actions)
 <!-- badges: end -->
@@ -49,7 +49,7 @@ print(citation('derfinderData'), bibtex = TRUE)
 #> 
 #>   Leonardo Collado-Torres, Andrew Jaffe and Jeffrey Leek (2020).
 #>   derfinderData: Processed BigWigs from BrainSpan for examples. R
-#>   package version 2.5.1. https://github.com/leekgroup/derfinderData
+#>   package version 2.5.3. https://github.com/leekgroup/derfinderData
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -57,7 +57,7 @@ print(citation('derfinderData'), bibtex = TRUE)
 #>     title = {derfinderData: Processed BigWigs from BrainSpan for examples},
 #>     author = {Leonardo Collado-Torres and Andrew Jaffe and Jeffrey Leek},
 #>     year = {2020},
-#>     note = {R package version 2.5.1},
+#>     note = {R package version 2.5.3},
 #>     url = {https://github.com/leekgroup/derfinderData},
 #>   }
 ```

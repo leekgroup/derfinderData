@@ -1,22 +1,25 @@
 ---
-output:
-  html_document:
+title: "Introduction to derfinderData"
+author: 
+  - name: Leonardo Collado-Torres
+    affiliation:
+    - &libd Lieber Institute for Brain Development, Johns Hopkins Medical Campus
+    - &ccb Center for Computational Biology, Johns Hopkins University
+    email: lcolladotor@gmail.com
+output: 
+  BiocStyle::html_document:
+    self_contained: yes
     toc: true
-    theme: united
-  knitrBootstrap::bootstrap_document:
-    theme.chooser: TRUE
-    highlight.chooser: TRUE
+    toc_float: true
+    toc_depth: 2
+    code_folding: show
+date: "`r doc_date()`"
+package: "`r pkg_ver('derfinderData')`"
+vignette: >
+  %\VignetteIndexEntry{Introduction to derfinderData}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}  
 ---
-
-<!--
-%\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Introduction to derfinderData}
--->
-
-Introduction to `derfinderData`
-===============================
-
-If you wish, you can view this vignette online [here](http://lcolladotor.github.io/derfinderData/).
 
 ```{r vignetteSetup, echo=FALSE, message=FALSE, warning = FALSE}
 ## Track time spent on making the vignette
@@ -32,22 +35,14 @@ cite_options(hyperlink = "to.doc", citation_format = "text", style = "html")
 # https://github.com/cboettig/knitcitations/issues/63
 
 ## Write bibliography information
-write.bibtex(c(
-    knitcitations = citation("knitcitations"),
+bib <- c(
+    BiocStyle = citation("BiocStyle"),
     brainspan = RefManageR::BibEntry(bibtype = "Unpublished", key = "brainspan", title = "Atlas of the Developing Human Brain [Internet]. Funded by ARRA Awards 1RC2MH089921-01, 1RC2MH090047-01, and 1RC2MH089929-01.", author = "BrainSpan", year = 2011, url = "http://developinghumanbrain.org"),
-    knitrBootstrap = citation("knitrBootstrap"),
+    knitcitations = citation("knitcitations"),
     knitr = citation("knitr")[3],
-    rmarkdown = citation("rmarkdown")
-),
-file = "derfinderDataRef.bib"
+    rmarkdown = citation("rmarkdown")[1]
 )
-bib <- read.bibtex("derfinderDataRef.bib")
-
-## Assign short names
-names(bib) <- c(
-    "knitcitations", "brainspan", "knitrBootstrap",
-    "knitr", "rmarkdown"
-)
+write.bibtex(bib, file = "derfinderDataRef.bib")
 ```
 
 
@@ -88,7 +83,7 @@ save(brainspanPheno, file = "brainspanPheno.RData")
 
 Here is how the data looks like:
 
-```{r 'explorePheno', results = 'asis', bootstrap.show.code = FALSE}
+```{r 'explorePheno', results = 'asis'}
 library("knitr")
 
 ## Explore pheno
@@ -167,30 +162,10 @@ dir(system.file("extdata", "A1C", package = "derfinderData"))
 
 Code for creating the vignette
 
-```{r createVignette, eval=FALSE, bootstrap.show.code=FALSE}
+```{r createVignette, eval=FALSE}
 ## Create the vignette
-library("knitrBootstrap")
-
-knitrBootstrapFlag <- packageVersion("knitrBootstrap") < "1.0.0"
-if (knitrBootstrapFlag) {
-    ## CRAN version
-    library("knitrBootstrap")
-    system.time(knit_bootstrap("derfinderData.Rmd", chooser = c(
-        "boot",
-        "code"
-    ), show_code = TRUE))
-    unlink("derfinderData.md")
-} else {
-    ## GitHub version
-    library("rmarkdown")
-    system.time(render(
-        "derfinderData.Rmd",
-        "knitrBootstrap::bootstrap_document"
-    ))
-}
-## Note: if you prefer the knitr version use:
-# library('rmarkdown')
-# system.time(render('derfinder.Rmd', 'html_document'))
+library("rmarkdown")
+system.time(render("derfinderData.Rmd", "BiocStyle::html_document"))
 
 ## Extract the R code
 library("knitr")
@@ -204,14 +179,14 @@ file.remove("derfinderDataRef.bib")
 
 Date the vignette was generated.
 
-```{r reproducibility1, echo=FALSE, bootstrap.show.code=FALSE}
+```{r reproducibility1, echo=FALSE}
 ## Date the vignette was generated
 Sys.time()
 ```
 
 Wallclock time spent generating the vignette.
 
-```{r reproducibility2, echo=FALSE, bootstrap.show.code=FALSE}
+```{r reproducibility2, echo=FALSE}
 ## Processing time in seconds
 totalTime <- diff(c(startTime, Sys.time()))
 round(totalTime, digits = 3)
@@ -219,7 +194,7 @@ round(totalTime, digits = 3)
 
 `R` session information.
 
-```{r reproducibility3, echo=FALSE, bootstrap.show.code=FALSE, bootstrap.show.message=FALSE}
+```{r reproducibility3, echo=FALSE}
 ## Session info
 library("sessioninfo")
 session_info()
@@ -227,7 +202,7 @@ session_info()
 
 # Bibliography
 
-This vignette was generated using `knitrBootstrap` `r citep(bib[['knitrBootstrap']])`
+This vignette was generated using `BiocStyle` `r citep(bib[['BiocStyle']])`
 with `knitr` `r citep(bib[['knitr']])` and `rmarkdown` `r citep(bib[['rmarkdown']])` running behind the scenes.
 
 Citations made with `knitcitations` `r citep(bib[['knitcitations']])`.

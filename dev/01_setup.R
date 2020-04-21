@@ -67,6 +67,9 @@ pkgdown::deploy_to_branch(new_process = FALSE)
 ## Update style for this document
 styler::style_file("dev/01_setup.R", transformers = styler::tidyverse_style(indent_by = 4))
 
+## Update vignette
+usethis::use_package('BiocStyle', 'Suggests')
+
 ## Update prior to committing
 file.create("dev/02_update.R")
 rstudioapi::navigateToFile("dev/02_update.R")
