@@ -18,7 +18,10 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![BioC status](http://bioconductor.org/shields/build/release/data-experiment/derfinderData.svg)](http://bioconductor.org/checkResults/release/data-experiment-LATEST/derfinderData/)
+[![BioC dev status](http://bioconductor.org/shields/build/devel/data-experiment/derfinderData.svg)](http://bioconductor.org/checkResults/devel/data-experiment-LATEST/derfinderData/)
 [![R build status](https://github.com/leekgroup/derfinderData/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/leekgroup/derfinderData/actions)
+[![Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts.](http://www.bioconductor.org/shields/posts/derfinderData.svg)](https://support.bioconductor.org/t/derfinderData/)
+[![GitHub issues](https://img.shields.io/github/issues/leekgroup/derfinderData)](https://github.com/leekgroup/derfinderData/issues)
 <!-- badges: end -->
 
 Data package for [derfinder](http://bioconductor.org/packages/derfinder) and [derfinderPlot](http://bioconductor.org/packages/derfinderPlot) examples.
