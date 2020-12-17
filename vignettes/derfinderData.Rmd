@@ -26,7 +26,7 @@ vignette: >
 startTime <- Sys.time()
 
 ## Bib setup
-library("RefManager")
+library("RefManageR")
 
 ## Write bibliography information
 bib <- c(
