@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">derfinderData</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.9.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.11.0</span>
       </span>
     </div>
 
@@ -70,16 +70,16 @@
 
       
 
-      </header><script src="derfinderData_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><script src="derfinderData_files/header-attrs-2.6/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Introduction to derfinderData</h1>
                         <h4 class="author">Leonardo Collado-Torres</h4>
             <address class="author_afil">
-      Lieber Institute for Brain Development, Johns Hopkins Medical Campus<br><a class="author_email" href="mailto:#"></a><a href="mailto:lcolladotor@gmail.com" class="email">lcolladotor@gmail.com</a>
+      Lieber Institute for Brain Development, Johns Hopkins Medical CampusCenter for Computational Biology, Johns Hopkins University<br><a class="author_email" href="mailto:#"></a><a href="mailto:lcolladotor@gmail.com" class="email">lcolladotor@gmail.com</a>
       </address>
                   
-            <h4 class="date">17 December 2020</h4>
+            <h4 class="date">24 May 2021</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/leekgroup/derfinderData/blob/master/vignettes/derfinderData.Rmd"><code>vignettes/derfinderData.Rmd</code></a></small>
       <div class="hidden name"><code>derfinderData.Rmd</code></div>
@@ -628,9 +628,9 @@ adult
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://yihui.org/knitr/">"knitr"</a></span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/pkg/knitr/man/knit.html">knit</a></span><span class="op">(</span><span class="st">"derfinderData.Rmd"</span>, tangle <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
 <p>Date the vignette was generated.</p>
-<pre><code>## [1] "2020-12-17 23:17:21 UTC"</code></pre>
+<pre><code>## [1] "2021-05-24 14:51:52 UTC"</code></pre>
 <p>Wallclock time spent generating the vignette.</p>
-<pre><code>## Time difference of 1.241 secs</code></pre>
+<pre><code>## Time difference of 1.315 secs</code></pre>
 <p><code>R</code> session information.</p>
 <pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
 ##  setting  value                       
@@ -642,50 +642,51 @@ adult
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2020-12-17                  
+##  date     2021-05-24                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package       * version date       lib source        
-##  assertthat      0.2.1   2019-03-21 [2] RSPM (R 4.0.0)
-##  BiocManager     1.30.10 2019-11-16 [2] CRAN (R 4.0.3)
+##  assertthat      0.2.1   2019-03-21 [2] RSPM (R 4.0.3)
+##  BiocManager     1.30.10 2019-11-16 [1] RSPM (R 4.0.0)
 ##  BiocStyle     * 2.18.1  2020-11-24 [1] Bioconductor  
 ##  bookdown        0.21    2020-10-13 [1] RSPM (R 4.0.2)
-##  cli             2.2.0   2020-11-20 [2] RSPM (R 4.0.3)
-##  crayon          1.3.4   2017-09-16 [2] RSPM (R 4.0.0)
-##  derfinderData * 2.9.1   2020-12-17 [1] Bioconductor  
-##  desc            1.2.0   2018-05-01 [2] RSPM (R 4.0.0)
+##  cachem          1.0.4   2021-02-13 [2] RSPM (R 4.0.3)
+##  cli             2.3.0   2021-01-31 [2] RSPM (R 4.0.3)
+##  crayon          1.4.1   2021-02-08 [2] RSPM (R 4.0.3)
+##  derfinderData * 2.11.0  2021-05-24 [1] Bioconductor  
+##  desc            1.2.0   2018-05-01 [2] RSPM (R 4.0.3)
 ##  digest          0.6.27  2020-10-24 [2] RSPM (R 4.0.3)
-##  evaluate        0.14    2019-05-28 [2] RSPM (R 4.0.0)
-##  fansi           0.4.1   2020-01-08 [2] RSPM (R 4.0.0)
-##  fs              1.5.0   2020-07-31 [2] RSPM (R 4.0.2)
+##  evaluate        0.14    2019-05-28 [2] RSPM (R 4.0.3)
+##  fastmap         1.1.0   2021-01-25 [2] RSPM (R 4.0.3)
+##  fs              1.5.0   2020-07-31 [2] RSPM (R 4.0.3)
 ##  generics        0.1.0   2020-10-31 [1] RSPM (R 4.0.3)
-##  glue            1.4.2   2020-08-27 [2] RSPM (R 4.0.2)
-##  highr           0.8     2019-03-20 [2] RSPM (R 4.0.0)
-##  htmltools       0.5.0   2020-06-16 [2] RSPM (R 4.0.1)
-##  httr            1.4.2   2020-07-20 [2] RSPM (R 4.0.2)
+##  glue            1.4.2   2020-08-27 [2] RSPM (R 4.0.3)
+##  highr           0.8     2019-03-20 [2] RSPM (R 4.0.3)
+##  htmltools       0.5.1.1 2021-01-22 [2] RSPM (R 4.0.3)
+##  httr            1.4.2   2020-07-20 [2] RSPM (R 4.0.3)
 ##  jsonlite        1.7.2   2020-12-09 [2] RSPM (R 4.0.3)
-##  knitr         * 1.30    2020-09-22 [2] RSPM (R 4.0.2)
+##  knitr         * 1.31    2021-01-27 [2] RSPM (R 4.0.3)
 ##  lubridate       1.7.9.2 2020-11-13 [1] RSPM (R 4.0.3)
 ##  magrittr        2.0.1   2020-11-17 [2] RSPM (R 4.0.3)
-##  memoise         1.1.0   2017-04-21 [2] RSPM (R 4.0.0)
+##  memoise         2.0.0   2021-01-26 [2] RSPM (R 4.0.3)
 ##  pkgdown         1.6.1   2020-09-12 [1] RSPM (R 4.0.2)
-##  plyr            1.8.6   2020-03-03 [1] RSPM (R 4.0.2)
+##  plyr            1.8.6   2020-03-03 [1] RSPM (R 4.0.3)
 ##  R6              2.5.0   2020-10-28 [2] RSPM (R 4.0.3)
-##  ragg            0.4.0   2020-10-05 [1] RSPM (R 4.0.3)
-##  Rcpp            1.0.5   2020-07-06 [2] RSPM (R 4.0.2)
+##  ragg            1.1.0   2021-02-15 [1] RSPM (R 4.0.3)
+##  Rcpp            1.0.6   2021-01-15 [2] RSPM (R 4.0.3)
 ##  RefManageR    * 1.3.0   2020-11-13 [1] RSPM (R 4.0.3)
-##  rlang           0.4.9   2020-11-26 [2] RSPM (R 4.0.3)
+##  rlang           0.4.10  2020-12-30 [2] RSPM (R 4.0.3)
 ##  rmarkdown       2.6     2020-12-14 [1] RSPM (R 4.0.3)
 ##  rprojroot       2.0.2   2020-11-15 [2] RSPM (R 4.0.3)
-##  sessioninfo   * 1.1.1   2018-11-05 [2] RSPM (R 4.0.0)
-##  stringi         1.5.3   2020-09-09 [2] RSPM (R 4.0.2)
-##  stringr         1.4.0   2019-02-10 [2] RSPM (R 4.0.0)
-##  systemfonts     0.3.2   2020-09-29 [1] RSPM (R 4.0.3)
-##  textshaping     0.2.1   2020-11-13 [1] RSPM (R 4.0.3)
-##  withr           2.3.0   2020-09-22 [2] RSPM (R 4.0.2)
-##  xfun            0.19    2020-10-30 [2] RSPM (R 4.0.3)
-##  xml2            1.3.2   2020-04-23 [2] RSPM (R 4.0.0)
-##  yaml            2.2.1   2020-02-01 [2] RSPM (R 4.0.0)
+##  sessioninfo   * 1.1.1   2018-11-05 [2] RSPM (R 4.0.3)
+##  stringi         1.5.3   2020-09-09 [2] RSPM (R 4.0.3)
+##  stringr         1.4.0   2019-02-10 [2] RSPM (R 4.0.3)
+##  systemfonts     1.0.1   2021-02-09 [1] RSPM (R 4.0.3)
+##  textshaping     0.3.0   2021-02-10 [1] RSPM (R 4.0.3)
+##  withr           2.4.1   2021-01-26 [2] RSPM (R 4.0.3)
+##  xfun            0.21    2021-02-10 [2] RSPM (R 4.0.3)
+##  xml2            1.3.2   2020-04-23 [2] RSPM (R 4.0.3)
+##  yaml            2.2.1   2020-02-01 [2] RSPM (R 4.0.3)
 ## 
 ## [1] /__w/_temp/Library
 ## [2] /usr/local/lib/R/site-library
