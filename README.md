@@ -34,8 +34,8 @@ Bioconductor](http://bioconductor.org/packages/derfinderData) or at the
 ## Installation instructions
 
 Get the latest stable `R` release from
-[CRAN](http://cran.r-project.org/). Then install `derfinderData` using
-from [Bioconductor](http://bioconductor.org/) the following code:
+[CRAN](http://cran.r-project.org/). Then install `derfinderData` from
+[Bioconductor](http://bioconductor.org/) using the following code:
 
 ``` r
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
