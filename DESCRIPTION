@@ -1,7 +1,7 @@
 Package: derfinderData
 Type: Package
 Title: Processed BigWigs from BrainSpan for examples
-Version: 2.13.1
+Version: 2.14.0
 Date: 2021-11-21
 Authors@R: c(person("Leonardo", "Collado-Torres", role = c("aut",
         "cre"), email = "lcolladotor@gmail.com",
