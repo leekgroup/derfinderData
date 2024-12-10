@@ -20,7 +20,7 @@ commit](https://bioconductor.org/shields/lastcommit/devel/data-experiment/derfin
 [![Bioc
 dependencies](https://bioconductor.org/shields/dependencies/release/derfinderData.svg)](https://bioconductor.org/packages/release/data-experiment/html/derfinderData.html#since)
 [![R build
-status](https://github.com/leekgroup/derfinderData/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/leekgroup/derfinderData/actions)
+status](https://github.com/leekgroup/derfinderData/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/leekgroup/derfinderData/actions/workflows/check-bioc.yml)
 [![GitHub
 issues](https://img.shields.io/github/issues/leekgroup/derfinderData)](https://github.com/leekgroup/derfinderData/issues)
 [![GitHub

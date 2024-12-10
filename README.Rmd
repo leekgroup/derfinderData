@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 [![Bioc support](https://bioconductor.org/shields/posts/derfinderData.svg)](https://support.bioconductor.org/tag/derfinderData)
 [![Bioc last commit](https://bioconductor.org/shields/lastcommit/devel/data-experiment/derfinderData.svg)](http://bioconductor.org/checkResults/devel/data-experiment-LATEST/derfinderData/)
 [![Bioc dependencies](https://bioconductor.org/shields/dependencies/release/derfinderData.svg)](https://bioconductor.org/packages/release/data-experiment/html/derfinderData.html#since)
-[![R build status](https://github.com/leekgroup/derfinderData/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/leekgroup/derfinderData/actions)
+[![R build status](https://github.com/leekgroup/derfinderData/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/leekgroup/derfinderData/actions/workflows/check-bioc.yml)
 [![GitHub issues](https://img.shields.io/github/issues/leekgroup/derfinderData)](https://github.com/leekgroup/derfinderData/issues)
 [![GitHub pulls](https://img.shields.io/github/issues-pr/leekgroup/derfinderData)](https://github.com/leekgroup/derfinderData/pulls)
 <!-- badges: end -->
